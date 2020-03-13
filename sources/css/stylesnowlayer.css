@@ -1,0 +1,198 @@
+.winter {
+    background-color: #252525;
+}
+.snow , .foliage {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.layer {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 500px;
+}
+.fall {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1000px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Animation SNOW/FOLIAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Animation SNOW/FOLIAGE Design
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.winter .fall .falleffect, .winter .fall .falleffect::before, .winter .fall .falleffect::after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+.autumn .fall .falleffect, .autumn .fall .falleffect::before, .autumn .fall .falleffect::after {
+    width: 45px;
+    height: 30px;
+    background-color: rgba(238, 87, 11, 0.849);
+    border-radius: 75% 00%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Animation SNOW/FOLIAGE Position
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.falleffect:nth-child(1) {
+    position: absolute;
+    transform: translateY(0%) translateX(0%);
+}
+.falleffect:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(150%) translateX(660%);
+}
+.falleffect:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    transform: translateY(600%) translateX(450%);
+}
+
+.falleffect:nth-child(2) {
+    position: absolute;
+    transform: translateY(450%) translateX(565%);
+}
+.falleffect:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(300%) translateX(890%);
+}
+.falleffect:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    transform: translateY(660%) translateX(330%);
+}
+
+.falleffect:nth-child(3) {
+    position: absolute;
+    left: 40%;
+    transform: translateY(990%) translateX(790%);
+}
+.falleffect:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(45%) translateX(990%);
+}
+.falleffect:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    transform: translateY(670%) translateX(600%);
+}
+.falleffect:nth-child(4) {
+    position: absolute;
+    left: 20%;
+    transform: translateY(162%) translateX(650%);
+}
+.falleffect:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(466%) translateX(990%);
+}
+.falleffect:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    transform: translateY(883%) translateX(330%);
+}
+.falleffect:nth-child(5) {
+    position: absolute;
+    left: 45%;
+    transform: translateY(162%) translateX(650%);
+}
+.falleffect:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(466%) translateX(990%);
+}
+.falleffect:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    transform: translateY(883%) translateX(670%);
+}
+.falleffect:nth-child(6) {
+    position: absolute;
+    left: -3%;
+    top: -3%;
+    transform: translateY(162%) translateX(650%);
+}
+.falleffect:nth-child(6)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(466%) translateX(990%);
+}
+.falleffect:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    transform: translateY(883%) translateX(780%);
+}
+.falleffect:nth-child(7) {
+    position: absolute;
+    right: -3%;
+    top: -3%;
+    transform: translateY(162%) translateX(650%);
+}
+.falleffect:nth-child(7)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(466%) translateX(990%);
+}
+.falleffect:nth-child(7)::after {
+    content: "";
+    position: absolute;
+    transform: translateY(883%) translateX(900%);
+}
+.layer:nth-child(2) {
+    position: absolute;
+    top: -30%;
+    left: 4%;
+}
+.layer:nth-child(3) {
+    position: absolute;
+    top: -30%;
+    left: 35%;
+}
+.layer:nth-child(4) {
+    position: absolute;
+    top: -50%;
+    left: 45%;
+}
+.layer:nth-child(5) {
+    position: absolute;
+    top: -30%;
+    left: -40%;
+}
+.layer:nth-child(6) {
+    position: absolute;
+    top: -20%;
+    left: -70%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Animation SNOW/FOLIAGE Medium & Normal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.fall {
+    animation-name: anime;
+    animation: anime 5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+.medium .fall {
+    transform: translateY(20%);
+    animation: anime 7s infinite;
+}
+@keyframes anime
+{
+    from {
+        top: 0;
+    }
+    to {
+        top: 100%;
+    }
+}

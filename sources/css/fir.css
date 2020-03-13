@@ -1,0 +1,51 @@
+div.fir {
+    width: 300px;
+    height: 320px;
+}
+div.fir-content {
+    background:rgb(50,200,100); 
+    padding: 0px; 
+    width: 800px; 
+    height: 100%;
+}
+p {
+    text-align: center; 
+    font-style: italic; 
+    white-space: pre; 
+    padding: 40px;
+}
+.blanc {
+    color:white;
+}
+.jaune {
+    color:yellow;
+}
+.rouge {
+    color:red;
+}
+.gauche, .droite{border-top:20px rgb(130, 191, 251) solid;}
+.gauche {
+    border-right: 50px green solid;
+}
+.droite {
+    border-left: 50px green solid;
+}
+.gauche {
+    float:left;
+}
+.droite {
+    float:right;
+}
+.droite + .gauche {
+    clear:right;
+}
+#basG,#basD {
+    border-right:0; 
+    border-left:0; 
+    border-top-width:100px;
+}
+
+#tronc {
+    border-top:150px rgb(150,150,100) solid; 
+    float:left;
+}
